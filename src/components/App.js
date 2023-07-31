@@ -13,7 +13,7 @@ const App = () => {
   const [sortCriteria, setSortCriteria] = useState('health');
 
   useEffect(() => {
-    axios.get('http://localhost:8001/bots') 
+    axios.get('  http://localhost:3000/bots') 
       .then((response) => {
         setAllBots(response.data);
       })

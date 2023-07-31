@@ -3,9 +3,9 @@ import YourBotArmy from "./YourBotArmy";
 import BotCollection from "./BotCollection";
 function BotsPage() {
   const [bots,setBots]=useState([])
-//API data fetch
+
 useEffect(()=>{
-  fetch("http://localhost:8001/bots")
+  fetch("  http://localhost:8001/bots")
 		.then((res) => res.json())
 		.then((data) => setBots(data));
 },[])
@@ -20,7 +20,7 @@ const removeBot= (id)=>{
   }
 }
 const deleteBot=(id) => {
-  fetch(`http://localhost:8001/bots${id}`, {
+  fetch(`  http://localhost:8001/bots${id}`, {
 		method: "DELETE",
 	}).then(() =>
 		setBots((previousData) => previousData.filter((bot) => bot.id !== id))
