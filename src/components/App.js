@@ -30,8 +30,8 @@ const App = () => {
   return (
     <>
       <h1>Bot Battlr</h1>
-      <BotCollection onEnlist={handleEnlist} />
       <YourBotArmy enlistedBots={enlistedBots} onRelease={handleRelease} onDelete={handleDelete} />
+      <BotCollection onEnlist={handleEnlist} />
     </>
   );
 };

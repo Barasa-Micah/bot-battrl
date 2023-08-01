@@ -13,6 +13,7 @@ const BotCollection = ({ onEnlist }) => {
   return (
     <div>
       <h2>Bot Collection</h2>
+      <div className='cont'>
       {bots.map((bot) => (
         <BotCard
           key={bot.id}
@@ -23,6 +24,7 @@ const BotCollection = ({ onEnlist }) => {
           onDelete={() => {}} 
         />
       ))}
+      </div>
     </div>
   );
 };

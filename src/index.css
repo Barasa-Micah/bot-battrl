@@ -9,7 +9,10 @@ h1 {
   text-align: center;
   margin: 20px 0;
 }
-
+.cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
 .bot-card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -20,7 +23,7 @@ h1 {
 }
 
 .bot-card img {
-  max-width: 100%;
+  max-width: 50%;
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -79,9 +82,9 @@ h1 {
 
 
 .bot-collection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
 }
 
 
