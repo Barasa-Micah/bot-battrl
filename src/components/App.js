@@ -8,7 +8,7 @@ const App = () => {
 
   const handleEnlist = (bot) => {
     if (!enlistedBots.some((enlistedBot) => enlistedBot.id === bot.id)) {
-      setEnlistedBots([...enlistedBots, bot]);
+      setEnlistedBots([...enlistedBots, bot]);  
     }
   };
 

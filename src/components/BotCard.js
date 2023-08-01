@@ -28,5 +28,4 @@ const BotCard = ({ bot, enlisted, onEnlist, onRelease, onDelete }) => {
     </div>
   );
 };
-
 export default BotCard;
