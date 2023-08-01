@@ -1,4 +1,3 @@
-// BotCollection.js
 import React, { useState, useEffect } from 'react';
 import BotCard from './BotCard';
 
