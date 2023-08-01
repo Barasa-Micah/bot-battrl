@@ -1,8 +1,7 @@
 
 import React, { useState } from 'react';
-import BotCollection from '../BotCollection';
+import BotCollection from './BotCollection';
 import YourBotArmy from '../YourBotArmy';
-import BotCard from './BotCard';
 
 const App = () => {
   const [enlistedBots, setEnlistedBots] = useState([]);
@@ -19,7 +18,7 @@ const App = () => {
 
   const handleDelete = async (bot) => {
     try {
-      await fetch(`http://localhost:8001/bots/${bot.id}`, {
+      await fetch(`http://localhost:3000/bots${bot.id}`, {
         method: 'DELETE',
       });
       handleRelease(bot);
@@ -29,11 +28,11 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
       <h1>Bot Battlr</h1>
       <BotCollection onEnlist={handleEnlist} />
       <YourBotArmy enlistedBots={enlistedBots} onRelease={handleRelease} onDelete={handleDelete} />
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import BotCard from './BotCard';
+import BotCard from './components/BotCard';
 
 const YourBotArmy = ({ enlistedBots, onRelease, onDelete }) => {
   return (

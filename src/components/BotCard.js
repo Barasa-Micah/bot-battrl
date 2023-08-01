@@ -17,6 +17,7 @@ const BotCard = ({ bot, enlisted, onEnlist, onRelease, onDelete }) => {
     <div className={`bot-card${enlisted ? ' enlisted' : ''}`}>
       <h2>{bot.name}</h2>
       <p>Class: {bot.class}</p>
+      <img src={bot.avatar_url}/>
       <p>Health: {bot.health}</p>
       <p>Damage: {bot.damage}</p>
       <p>Armor: {bot.armor}</p>
